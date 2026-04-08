@@ -52,7 +52,7 @@ function Dashboard(props: VirtualCardProps) {
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-2xl font-bold text-gray-800">Financial Dashboard</h1>
-            <p className="text-gray-500">Welcome back, Johnson</p>
+            <p className="text-gray-500">Welcome back, Princess</p>
           </div>
           <div className="flex items-center gap-4">
             <button className="p-2 bg-white rounded-full shadow-sm relative">
@@ -60,7 +60,7 @@ function Dashboard(props: VirtualCardProps) {
               <span className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
             </button>
             <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-medium">
-              JD
+              PE
             </div>
           </div>
         </div>
