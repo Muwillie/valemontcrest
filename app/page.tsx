@@ -93,15 +93,17 @@ function Navbar() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
-            {links.map(l => (
-              
-                key={l}
-                href={`#${l.toLowerCase()}`}
-                className={`text-sm font-medium transition-colors ${scrolled ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"}`}
-              >
-                {l}
-              </a>
-            ))}
+{links.map(l => (
+  <a
+    key={l}
+    href={`#${l.toLowerCase()}`}
+    className={`text-sm font-medium transition-colors ${
+      scrolled ? "text-slate-600 hover:text-slate-900" : "text-white/80 hover:text-white"
+    }`}
+  >
+    {l}
+  </a>
+))}
           </nav>
 
           {/* CTA */}
@@ -140,16 +142,16 @@ function Navbar() {
             className="md:hidden bg-white border-t border-slate-100 overflow-hidden"
           >
             <div className="px-4 py-4 space-y-1">
-              {links.map(l => (
-                
-                  key={l}
-                  href={`#${l.toLowerCase()}`}
-                  onClick={() => setMenuOpen(false)}
-                  className="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-xl transition-colors"
-                >
-                  {l}
-                </a>
-              ))}
+            {links.map(l => (
+  <a
+    key={l}
+    href={`#${l.toLowerCase()}`}
+    onClick={() => setMenuOpen(false)}
+    className="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-xl transition-colors"
+  >
+    {l}
+  </a>
+))}
               <div className="pt-3 flex flex-col gap-2">
                 <Link href="/sign-in" className="w-full py-2.5 text-center text-sm font-medium border border-slate-200 rounded-xl text-slate-700 hover:bg-slate-50 transition-colors">
                   Sign in
@@ -250,13 +252,15 @@ function Hero() {
             Open a free account
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
-          
-            href="#features"
-            className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium px-8 py-4 rounded-2xl text-sm transition-all"
-          >
-            See how it works
-          </a>
-        </motion.div>
+          <a
+  href="#features"
+  className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium px-8 py-4 rounded-2xl text-sm transition-all"
+>
+  See how it works
+</a>
+</motion.div>
+
+</div>
 
         {/* Stats row */}
         <motion.div
@@ -294,7 +298,7 @@ function Hero() {
             <ChevronDown className="w-6 h-6 text-white/40" />
           </motion.div>
         </motion.div>
-      </div>
+  
     </section>
   );
 }
@@ -802,13 +806,13 @@ function CTABanner() {
                   Open your free account
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                
-                  href="mailto:support@securebank.com"
-                  className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium px-8 py-4 rounded-2xl text-sm transition-all"
-                >
-                  <HeadphonesIcon className="w-4 h-4" />
-                  Talk to an advisor
-                </a>
+                <a
+  href="mailto:support@securebank.com"
+  className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium px-8 py-4 rounded-2xl text-sm transition-all"
+>
+  <HeadphonesIcon className="w-4 h-4" />
+  Talk to an advisor
+</a>
               </div>
             </div>
           </div>

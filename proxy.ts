@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const PUBLIC_ROUTES  = ['/sign-in', '/sign-up', '/forgot-password'];
+const PUBLIC_ROUTES  = ['/sign-in', '/sign-up', '/forgot-password', '/'];
 const PROTECTED_ROOT = '/dashboard';
 
 export function proxy(req: NextRequest) {
