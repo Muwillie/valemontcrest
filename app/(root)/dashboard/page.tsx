@@ -861,7 +861,7 @@ export default function Dashboard() {
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-lg font-semibold text-gray-800">Recent Transactions</h2>
-                <Link href="/transactions-history" className="text-sm text-blue-500 font-medium">See All</Link>
+                <Link href="/transactions" className="text-sm text-blue-500 font-medium">See All</Link>
               </div>
               <div className="space-y-3">
                 {recentTransactions.map((tx, i) => (

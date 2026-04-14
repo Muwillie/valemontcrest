@@ -296,7 +296,7 @@ function AccountDetailPanel({
       {/* Action buttons */}
       <div className="px-5 py-4 border-b border-slate-100 grid grid-cols-3 gap-2">
         <Link
-          href="/deposit"
+          href="/online-deposit"
           className="flex flex-col items-center gap-1.5 py-3 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-600 text-xs font-medium transition-all"
         >
           <ArrowDownLeft className="w-4 h-4" />
@@ -322,7 +322,7 @@ function AccountDetailPanel({
       <div className="px-5 py-4">
         <div className="flex justify-between items-center mb-3">
           <p className="text-sm font-semibold text-slate-800">Recent transactions</p>
-          <Link href="/transactions-history" className="text-xs text-blue-500 hover:underline flex items-center gap-0.5">
+          <Link href="/transactions" className="text-xs text-blue-500 hover:underline flex items-center gap-0.5">
             All <ChevronRight className="w-3 h-3" />
           </Link>
         </div>

@@ -130,7 +130,7 @@ function UpgradeModal({ onClose }: { onClose: () => void }) {
         className="bg-white rounded-2xl w-full max-w-sm shadow-2xl overflow-hidden"
         onClick={e => e.stopPropagation()}
       >
-        <div className="bg-gradient-to-r from-slate-800 to-slate-900 px-5 py-4 text-white flex justify-between items-center">
+        <div className="bg-linear-to-r from-slate-800 to-slate-900 px-5 py-4 text-white flex justify-between items-center">
           <div>
             <p className="font-semibold">Upgrade account</p>
             <p className="text-xs opacity-60 mt-0.5">Choose a new tier</p>
@@ -225,7 +225,7 @@ function ScheduleModal({ onClose }: { onClose: () => void }) {
         className="bg-white rounded-2xl w-full max-w-sm shadow-2xl overflow-hidden"
         onClick={e => e.stopPropagation()}
       >
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-4 text-white flex justify-between items-center">
+        <div className="bg-linear-to-r from-blue-600 to-indigo-600 px-5 py-4 text-white flex justify-between items-center">
           <div>
             <p className="font-semibold">Schedule a call</p>
             <p className="text-xs opacity-70 mt-0.5">With Sandra M. Johnson</p>
@@ -324,13 +324,13 @@ function ChatPanel({ onClose }: { onClose: () => void }) {
       className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xl"
     >
       {/* Chat header */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-3 flex items-center justify-between">
+      <div className="bg-linear-to-r from-blue-600 to-indigo-600 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="relative">
             <div className="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm">
               SJ
             </div>
-            <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 border-2 border-white rounded-full" />
+            {/* <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 border-2 border-white rounded-full" /> */}
           </div>
           <div>
             <p className="text-sm font-semibold text-white">Sandra M. Johnson</p>
@@ -478,7 +478,7 @@ export default function AccountManagerPage() {
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl px-5 py-5 text-white"
+          className="bg-linear-to-br from-slate-800 to-slate-900 rounded-2xl px-5 py-5 text-white"
         >
           <div className="flex justify-between items-start">
             <div>
@@ -503,7 +503,7 @@ export default function AccountManagerPage() {
             </div>
             <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-gradient-to-r from-green-400 to-emerald-400 rounded-full"
+                className="h-full bg-linear-to-r from-green-400 to-emerald-400 rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: `${(account.score / 850) * 100}%` }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
@@ -543,7 +543,7 @@ export default function AccountManagerPage() {
 
           <button
             onClick={() => setModal("upgrade")}
-            className="mt-4 w-full flex items-center justify-between px-4 py-3 rounded-xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 hover:from-amber-100 hover:to-orange-100 transition-all"
+            className="mt-4 w-full flex items-center justify-between px-4 py-3 rounded-xl bg-linear-to-r from-amber-50 to-orange-50 border border-amber-200 hover:from-amber-100 hover:to-orange-100 transition-all"
           >
             <div className="flex items-center gap-2">
               <Star className="w-4 h-4 text-amber-500" />
@@ -565,7 +565,7 @@ export default function AccountManagerPage() {
           {/* Manager profile */}
           <div className="flex items-center gap-4 mb-4 pb-4 border-b border-slate-100">
             <div className="relative shrink-0">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg">
+              <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg">
                 SJ
               </div>
               <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 border-2 border-white rounded-full" />

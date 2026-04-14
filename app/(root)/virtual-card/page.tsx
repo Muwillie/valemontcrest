@@ -423,7 +423,7 @@ export default function VirtualCardPage() {
         <div className="bg-white rounded-2xl border border-slate-200 px-5 py-4">
           <div className="flex justify-between items-center mb-3">
             <p className="text-sm font-semibold text-slate-800">Recent transactions</p>
-            <Link href="/transactions-history" className="text-xs text-blue-500 font-medium hover:underline flex items-center gap-0.5">
+            <Link href="/transactions" className="text-xs text-blue-500 font-medium hover:underline flex items-center gap-0.5">
               See all <ChevronRight className="w-3 h-3" />
             </Link>
           </div>
