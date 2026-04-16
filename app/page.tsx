@@ -135,7 +135,7 @@ function Hero() {
             sizes="100vw"
           />
           {/* Dark overlay — keeps text readable over any photo */}
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900/90" />
+          {/* <div className="absolute inset-0 bg-linear-to-b from-slate-900/80 via-slate-900/70 to-slate-900/90" /> */}
           {/* Subtle blue tint for brand consistency */}
         
         </motion.div>
@@ -166,16 +166,7 @@ function Hero() {
       {/* ── Content ── */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
 
-        {/* Trust pill */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="inline-flex items-center gap-2 bg-white/5 border border-white/15 backdrop-blur-sm text-blue-300 text-xs font-medium px-4 py-2 rounded-full mb-10"
-        >
-          <BadgeCheck className="w-3.5 h-3.5" />
-          Trusted by 2M+ customers · FDIC Insured · 256-bit Encryption
-        </motion.div>
+    
 
         {/* Headline */}
         <motion.div
