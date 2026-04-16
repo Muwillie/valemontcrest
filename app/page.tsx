@@ -135,7 +135,7 @@ function Hero() {
             sizes="100vw"
           />
           {/* Dark overlay — keeps text readable over any photo */}
-          <div className="absolute inset-0 bg-linear-to-b from-slate-900/20 via-slate-900/10 to-slate-900/30" />
+          <div className="absolute inset-0 bg-linear-to-b from-slate-900/40 via-slate-900/30 to-slate-900/50" />
           {/* Subtle blue tint for brand consistency */}
         
         </motion.div>
@@ -198,9 +198,9 @@ function Hero() {
           transition={{ delay: 0.4 }}
           className="text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          SecureBank gives you the power to manage, grow, and protect your
+          Valemont Crest Investment Bank gives you the power to manage, grow, and protect your
           money — all from one beautifully simple dashboard.
-          Open an account in minutes. No paperwork. No branch visit.
+          Open an account in minutes.
         </motion.p>
 
         {/* CTAs */}
@@ -214,15 +214,15 @@ function Hero() {
             href="/sign-in"
             className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-2xl text-sm transition-all hover:shadow-2xl hover:shadow-blue-500/30 group"
           >
-            Open a free account
+            Open an account
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
-          <button className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/15 text-white font-medium px-8 py-4 rounded-2xl text-sm transition-all backdrop-blur-sm group">
+          {/* <button className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/15 text-white font-medium px-8 py-4 rounded-2xl text-sm transition-all backdrop-blur-sm group">
             <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
               <Play className="w-3 h-3 fill-white ml-0.5" />
             </div>
             Watch demo
-          </button>
+          </button> */}
         </motion.div>
 
         {/* Stats */}
@@ -332,7 +332,7 @@ function Features() {
             Everything you need.<br />Nothing you don&apos;t.
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto">
-            We built SecureBank to be the only banking app you&apos;ll ever need.
+            We built Valemont Crest Investment Bank to be the only banking app you&apos;ll ever need.
           </p>
         </FadeIn>
 
@@ -369,7 +369,7 @@ function AppShowcase() {
               Your entire bank in your pocket
             </h2>
             <p className="text-slate-500 text-lg leading-relaxed mb-8">
-              The SecureBank app puts full banking control in your hands.
+              The Valemont Crest Investment Bank app puts full banking control in your hands.
               Check balances, send money, deposit cheques, freeze cards,
               and track spending — all from one beautifully designed interface
               that works on any device.
@@ -416,7 +416,7 @@ function AppShowcase() {
                   Place at: /public/images/app-mockup.png
                   Ideal size: portrait, around 400×700px
                 */}
-                <div className="relative w-72 h-[560px] sm:w-80 sm:h-[620px]">
+                <div className="relative w-72 h-140 sm:w-80 sm:h-155">
                   <Image
                     src="/images/app-mockup.png"
                     alt="Hand holding an iPhone displaying the SecureBank mobile banking dashboard with account balances and recent transactions"
@@ -809,8 +809,8 @@ function Pricing() {
 
 function Testimonials() {
   const reviews = [
-    { name: "Sarah K.",  role: "Small business owner", rating: 5, text: "Switched from my old bank after 12 years. The transfer speeds and savings rate alone are worth it — wish I'd done it sooner." },
-    { name: "Marcus T.", role: "Freelance designer",    rating: 5, text: "Managing multiple currencies used to be a nightmare. SecureBank makes it effortless with real rates and absolutely zero fees." },
+    { name: "Jules K.",  role: "Small business owner", rating: 5, text: "Switched from my old bank after 12 years. The transfer speeds and savings rate alone are worth it — wish I'd done it sooner." },
+    { name: "Marcus T.", role: "Freelance designer",    rating: 5, text: "Managing multiple currencies used to be a nightmare. Valemont Crest Investment Bank makes it effortless with real rates and absolutely zero fees." },
     { name: "Priya M.",  role: "Software engineer",     rating: 5, text: "Started investing with $50 in fractional shares. The robo-advisor built me a properly diversified portfolio automatically." },
     { name: "James O.",  role: "Retired teacher",       rating: 5, text: "4.65% APY is genuinely unbeatable. My money actually grows now instead of sitting in an account earning next to nothing." },
     { name: "Elena R.",  role: "Marketing director",    rating: 5, text: "The spending insights showed me I was burning $400/mo on forgotten subscriptions. Saved me money in the first week." },
@@ -903,12 +903,12 @@ function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   const faqs = [
-    { q: "Is SecureBank a real FDIC-insured bank?",         a: "Yes. SecureBank is a federally chartered bank, FDIC-insured up to $250,000 per depositor. Your deposits are protected by the full faith of the US government — the same protection as any major bank." },
+    { q: "Is Valemont Crest Investment Bank a real FDIC-insured bank?",         a: "Yes. Valemont Crest Investment Bank is a federally chartered bank, FDIC-insured up to $250,000 per depositor. Your deposits are protected by the full faith of the US government — the same protection as any major bank." },
     { q: "How long does it take to open an account?",       a: "Most accounts are fully open in under 5 minutes. You'll need a government-issued ID and your Social Security number. There's no paperwork and no branch visit required." },
     { q: "Are there any monthly or hidden fees?",           a: "Our Basic plan is completely free — no monthly fees, no minimum balance, no surprises. Premium and Business plans have a flat monthly fee with a free 30-day trial." },
     { q: "How does the 4.65% APY savings rate work?",       a: "Your entire savings balance earns 4.65% APY, compounded daily and credited to your account monthly. There are no rate tiers — everyone earns the same rate from dollar one." },
-    { q: "What happens to my money if SecureBank closes?",  a: "All deposits are FDIC-insured up to $250,000 per depositor. Beyond that, SecureBank maintains capital reserves significantly above the regulatory minimum." },
-    { q: "Can I use SecureBank outside the United States?", a: "Yes. Our debit and credit cards work in 150+ countries with no foreign transaction fees. International wire transfers are available to 80+ countries with real mid-market exchange rates." },
+    { q: "What happens to my money if Valemont Crest Investment Bank closes?",  a: "All deposits are FDIC-insured up to $250,000 per depositor. Beyond that, Valemont Crest Investment Bank maintains capital reserves significantly above the regulatory minimum." },
+    { q: "Can I use Valemont Crest Investment Bank outside the United States?", a: "Yes. Our debit and credit cards work in 150+ countries with no foreign transaction fees. International wire transfers are available to 80+ countries with real mid-market exchange rates." },
   ];
 
   return (
@@ -1010,7 +1010,7 @@ function CTABanner() {
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
-                  href="mailto:support@securebank.com"
+                  href="mailto:support@valemontcrest.com"
                   className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/15 text-white font-medium px-8 py-4 rounded-2xl text-sm transition-all backdrop-blur-sm"
                 >
                   <HeadphonesIcon className="w-4 h-4" />
