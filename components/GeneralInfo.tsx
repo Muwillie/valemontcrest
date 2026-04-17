@@ -23,12 +23,12 @@ export default function GeneralInfo() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Input disabled value="9909323285" placeholder="Account No" />
         <Input disabled value="Savings" placeholder="Account Type" />
-        <Input disabled value="princessowen81@gmail.com" placeholder="Email" />
-        <Input disabled value="1985-10-05" placeholder="Date Of Birth" />
+        <Input disabled value="thomashood812@gmail.com" placeholder="Email" />
+        <Input disabled value="1935-10-05" placeholder="Date Of Birth" />
         <Input disabled value="Nurse" placeholder="Occupation" />
         <Input disabled value="3477079854" placeholder="Phone Number" />
-        <Input disabled value="Female" placeholder="Gender" />
-        <Input disabled value="Single" placeholder="Marital Status" />
+        <Input disabled value="Male" placeholder="Gender" />
+        <Input disabled value="Married" placeholder="Marital Status" />
       </div>
     </Card>
     </div>
