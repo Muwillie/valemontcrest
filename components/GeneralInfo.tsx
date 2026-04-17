@@ -23,10 +23,10 @@ export default function GeneralInfo() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Input disabled value="9909323285" placeholder="Account No" />
         <Input disabled value="Savings" placeholder="Account Type" />
-        <Input disabled value="thomashood812@gmail.com" placeholder="Email" />
-        <Input disabled value="1935-10-05" placeholder="Date Of Birth" />
-        <Input disabled value="Nurse" placeholder="Occupation" />
-        <Input disabled value="3477079854" placeholder="Phone Number" />
+        <Input disabled value="thomaswood812@gmail.com" placeholder="Email" />
+        <Input disabled value="1965-10-05" placeholder="Date Of Birth" />
+        <Input disabled value="Business Man" placeholder="Occupation" />
+        <Input disabled value="7207019467" placeholder="Phone Number" />
         <Input disabled value="Male" placeholder="Gender" />
         <Input disabled value="Married" placeholder="Marital Status" />
       </div>
