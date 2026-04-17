@@ -984,10 +984,10 @@ function CTABanner() {
             </div>
 
             {/* Grid overlay */}
-            <div className="absolute inset-0 opacity-[0.05]" style={{
+            {/* <div className="absolute inset-0 opacity-[0.05]" style={{
               backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
               backgroundSize: "40px 40px",
-            }} />
+            }} /> */}
 
             <div className="relative z-10 px-8 py-20 text-center">
               <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-400/20 text-blue-300 text-xs font-bold px-4 py-2 rounded-full mb-7 uppercase tracking-widest">

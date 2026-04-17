@@ -185,16 +185,13 @@ export default function SignUpPage() {
           <Image
             src="/images/logo.png"
             alt=" logo"
-            width={52}
-            height={52}
+            width={356}
+            height={96}
             className="rounded-2xl"
             priority
           />
           <div className="text-center">
             <h1 className="text-xl font-medium">Open an account</h1>
-            <p className="text-sm text-muted-foreground">
-              Join 2M+ customers banking with Valemont Crest Investment Bank
-            </p>
           </div>
         </div>
 
