@@ -44,9 +44,9 @@ interface WithdrawalMethodOption {
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const ACCOUNTS: Account[] = [
-  { id: 'checking',   name: 'Checking',   number: '••4821', balance: 5680.32,  overdraftLimit: 500,  overdraftFee: 35  },
-  { id: 'savings',    name: 'Savings',    number: '••9302', balance: 12450.75, overdraftLimit: 0,    overdraftFee: 0   },
-  { id: 'investment', name: 'Investment', number: '••2211', balance: 34200.18, overdraftLimit: 0,    overdraftFee: 0   },
+  { id: 'checking',   name: 'Checking',   number: '••4821', balance: 5845.20,  overdraftLimit: 500,  overdraftFee: 35  },
+  { id: 'savings',    name: 'Savings',    number: '••9302', balance: 12350.75, overdraftLimit: 0,    overdraftFee: 0   },
+  { id: 'investment', name: 'Investment', number: '••2211', balance: 23000532.00, overdraftLimit: 0,    overdraftFee: 0   },
 ];
 
 const METHODS: WithdrawalMethodOption[] = [
