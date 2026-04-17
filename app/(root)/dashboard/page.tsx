@@ -671,12 +671,12 @@ export default function Dashboard() {
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-2xl font-bold text-gray-800">Financial Dashboard</h1>
-            <p className="text-gray-500">Welcome back, Princess</p>
+            <p className="text-gray-500">Welcome back, Thomas </p>
           </div>
           <div className="flex items-center gap-4">
             <SignOutButton />
             <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-medium">
-              PE
+              TW
             </div>
           </div>
         </div>
