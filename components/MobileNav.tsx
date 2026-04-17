@@ -53,8 +53,8 @@ export default function MobileNav() {
       <ProfileImageModal
         open={imgOpen}
         onClose={() => setImgOpen(false)}
-        src="/images/profile.jpg"
-        name="Princess Evenly"
+        src="/images/profile1.jpg"
+        name="Thomas Wood"
       />
 
       <Sheet open={open} onOpenChange={setOpen}>
@@ -79,7 +79,7 @@ export default function MobileNav() {
             >
               <div className="w-16 h-16 rounded-2xl bg-gray-100 overflow-hidden ring-2 ring-blue-100 group-hover:ring-blue-400 transition-all">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/profile1.jpg"
                   alt="User Avatar"
                   width={64}
                   height={64}
@@ -92,7 +92,7 @@ export default function MobileNav() {
             </button>
             <div className="text-center">
               <p className="text-sm font-semibold text-slate-800">Princess Evenly</p>
-              <span className="text-xs text-slate-400">Premium Savings</span>
+              <span className="text-xs text-slate-400">Platinum Savings</span>
             </div>
           </div>
 
