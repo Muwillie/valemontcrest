@@ -45,7 +45,7 @@ export default function Sidebar() {
         open={imgOpen}
         onClose={() => setImgOpen(false)}
         src="/images/profile.jpg"
-        name="Princess Evenly"
+        name="Thomas Wood"
       />
 
       <aside className="w-[220px] min-h-screen bg-white border-r border-slate-100 px-3 py-5 flex flex-col max-md:hidden">
@@ -72,8 +72,8 @@ export default function Sidebar() {
             </div>
           </button>
           <div className="text-center">
-            <p className="text-sm font-semibold text-slate-800">Princess Evenly</p>
-            <span className="text-[11px] text-slate-400">Premium Savings</span>
+            <p className="text-sm font-semibold text-slate-800">Thomas Hood</p>
+            <span className="text-[11px] text-slate-400">Platinum Savings</span>
           </div>
         </div>
 
