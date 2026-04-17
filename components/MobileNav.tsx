@@ -91,7 +91,7 @@ export default function MobileNav() {
               </div>
             </button>
             <div className="text-center">
-              <p className="text-sm font-semibold text-slate-800">Princess Evenly</p>
+              <p className="text-sm font-semibold text-slate-800">Thomas Wood</p>
               <span className="text-xs text-slate-400">Platinum Savings</span>
             </div>
           </div>
