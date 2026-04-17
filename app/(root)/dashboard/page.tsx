@@ -621,7 +621,7 @@ export default function Dashboard() {
     },
     {
       name: 'Investments',
-      balance: 32640.50,
+      balance: 23000532.00,
       change: 7.5,
       color: 'bg-gradient-to-br from-purple-500 to-purple-600',
       history: [28000, 29500, 30200, 31000, 31800, 32100, 32640],
@@ -746,8 +746,8 @@ export default function Dashboard() {
                   <div>
                     <p className="text-white font-mono tracking-widest text-sm">•••• •••• •••• 1412</p>
                     <div className="flex justify-between text-white text-xs mt-2 opacity-80">
-                      <span>Johnson</span>
-                      <span>24/12</span>
+                      <span>Thomas Wood</span>
+                      <span>26/12</span>
                     </div>
                   </div>
                 </div>
@@ -760,8 +760,8 @@ export default function Dashboard() {
                   <div>
                     <p className="text-white font-mono tracking-widest text-sm">•••• •••• •••• 5678</p>
                     <div className="flex justify-between text-white text-xs mt-2 opacity-80">
-                      <span>Johnson</span>
-                      <span>25/11</span>
+                      <span>Thomas Wood</span>
+                      <span>26/11</span>
                     </div>
                   </div>
                 </div>
