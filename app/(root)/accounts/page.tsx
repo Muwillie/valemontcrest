@@ -90,7 +90,7 @@ const accountsData: Account[] = [
     name: "Investment Portfolio",
     accountNumber: "**** **** 2211",
     routingNumber: "021000021",
-    balance: 32640.50,
+    balance: 23000532.00,
     change: 7.5,
     changeAmt: 2277.50,
     type: "investment",
