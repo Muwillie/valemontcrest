@@ -86,7 +86,7 @@ function ProductsDropdown({ onClose }: { onClose: () => void }) {
       <div className="border-t border-slate-100 px-4 py-3 bg-slate-50 flex items-center justify-between">
         <p className="text-xs text-slate-400">All products are FDIC insured</p>
         <Link
-          href="/sign-in"
+          href="/sign-up"
           onClick={onClose}
           className="text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors"
         >
@@ -203,7 +203,7 @@ export default function Navbar() {
                 Sign in
               </Link>
               <Link
-                href="/sign-in"
+                href="/sign-up"
                 className="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-blue-500/25"
               >
                 Open account

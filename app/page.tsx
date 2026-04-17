@@ -211,7 +211,7 @@ function Hero() {
           className="flex flex-col sm:flex-row gap-3 justify-center mb-20"
         >
           <Link
-            href="/sign-in"
+            href="/sign-up"
             className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-2xl text-sm transition-all hover:shadow-2xl hover:shadow-blue-500/30 group"
           >
             Open an account
@@ -236,7 +236,7 @@ function Hero() {
             { value: 2,    suffix: "M+", label: "Customers"        },
             { value: 99.9, suffix: "%",  label: "Uptime SLA"       },
             { value: 4.9,  suffix: "★",  label: "App Store rating" },
-            { value: 150,  suffix: "+",  label: "Countries"        },
+            { value: 10,  suffix: "+",  label: "Countries"        },
           ].map((s, i) => (
             <div key={i} className="bg-white/5 px-6 py-5 text-center">
               <p className="text-2xl sm:text-3xl font-extrabold text-white">
@@ -267,8 +267,8 @@ function Hero() {
 
 function SocialProof() {
   const logos = [
-    { name: "Forbes",      src: "/images/press/forbes.png"      },
-    { name: "TechCrunch",  src: "/images/br.png"  },
+    // { name: "Forbes",      src: "/images/press/forbes.png"      },
+    { name: "TechCrunch",  src: "/images/tc.png"  },
     { name: "Bloomberg",   src: "/images/bloomberg.png"   },
     { name: "NerdWallet",  src: "/images/nw.png"  },
     { name: "Bankrate",    src: "/images/br.png"    },
@@ -975,7 +975,7 @@ function CTABanner() {
             */}
             <div className="relative h-full">
               <Image
-                src="/images/cta-bg.jpg"
+                src="/images/nightcta.jpg"
                 alt="Aerial night view of a glittering financial district city skyline with lights reflecting on water"
                 fill
                 className="object-cover object-center"
@@ -1003,10 +1003,10 @@ function CTABanner() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
-                  href="/sign-in"
+                  href="/sign-up"
                   className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-2xl text-sm transition-all hover:shadow-2xl hover:shadow-blue-500/30 group"
                 >
-                  Open your free account
+                  Open an account
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a

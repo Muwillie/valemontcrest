@@ -69,7 +69,7 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-4">
+            {/* <Link href="/" className="flex items-center gap-2.5 mb-4">
               <div className="w-9 h-9 rounded-xl overflow-hidden bg-blue-600 flex items-center justify-center">
                 <Image
                   src="/images/logo.png"
@@ -83,7 +83,7 @@ export default function Footer() {
                 />
               </div>
               <span className="font-bold text-xl">SecureBank</span>
-            </Link>
+            </Link> */}
 
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-xs">
               Modern banking built around you. Manage, grow, and protect your money — all from one secure place.
@@ -152,27 +152,6 @@ export default function Footer() {
             </div>
           ))}
         </div>
-
-        {/* Bottom */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-6 border-t border-white/10">
-          <p className="text-slate-500 text-xs text-center sm:text-left">
-            © {new Date().getFullYear()} SecureBank, N.A. All rights reserved.
-            Member FDIC. Equal Housing Lender.
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            {["Privacy", "Terms", "Cookies", "Sitemap"].map((l) => (
-              <Link
-                key={l}
-                href="#"
-                className="text-slate-500 hover:text-slate-300 text-xs transition-colors"
-              >
-                {l}
-              </Link>
-            ))}
-          </div>
-        </div>
-
       </div>
     </footer>
   );
